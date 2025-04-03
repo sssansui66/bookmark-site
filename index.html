@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人导航站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>个人导航站</h1>
+            <input type="text" class="search-box" placeholder="搜索书签...">
+        </header>
+
+        <div class="categories">
+            <div class="category">
+                <h2>海外产品</h2>
+                <div class="links">
+                    <div class="link-item">
+                        <a href="https://www.youtube.com/">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhUlEQVQ4ja3Tv2pUQRTH8c+Ze9e4CAGNlSSa2CmCGE0hgm/gA9j5BlY+RawFGwtbH0IkiGCwEMQ2aFIFokGUGHfvjMXcTTapZPHAMH84Z+bM+f5OQCGQ1HnKbvf7D+XkuYIclEnwTFaIqIsbS5xZI1+gOUceoiWa3rXDmHRA94v0jT+b4dN2FKsPSC9wsTqnOkXURI8ynlieLPbIj6JYfUNzn25EpN67MKpJpIZ8FBR1lEwzoNtIlKt0mdJQEhq61sqV1mAwkH8MpNQS7bFPaWpMLCfSQn251kOK4Gd4/DC8fs7dO+T94DBIcfy/SJSFhLPH/4uY3GPcce8mGy959YzlRYyImKY2TLMinFiL3xj21S5KqS+0DW8/8mSdd+/7ROcoeRrJQRS3tolLtfgRtdAdK0vs7IbRPmm+yGUKYZnob6cltmgWT2Jsiq0vPcb5KYzRY9RjHG+1WKdcI50SUtsr3qkWyapCyx7xtJfy9cvMrZHO4x+kHN853Ayfv/6vZpq9nf8CnF2KWbg2p58AAAAASUVORK5CYII=" alt="YouTube">
+                            YouTube
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://www.google.com.hk/">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIklEQVQ4jYWSS0iUURTHf/fe8RvHooE2VlT2FNqUGWmNEYUR9lhEEVJhUIsoXOQuap1Rq6KHNQt3LaPAIOxhlNTChUwLMU3NR1CklUzg6xvPd1ro2KhTHjjcA/e8/uf/hzmmqsUiEheRLhHxp/2TiDxQ1aK5+ZmFeSJSrwuYiMRVNZKuMxnFz51zu9T3GX/6iPGmRqS/F5WAUMEawuUVRI5UYjwPEWl2zlUYY8YMgIjUW2vPBkPfSV6uYbKvJ+uW3rZSojfuABAEQdw5d96oajHQqr7P8IUqpL8X43lEjp3EK4mBtfgt75l4+4po7U3cytWZPbcyjUlTidv642ipDu7foX7bh2zgs92jDhHpUlWdbNmuEw15OvqweqE7ZjboCAEFADrSjs1LkRM7NAt3+bWRebfYudFx9XguwFqbwePs9z/mT/6NLdAHMBpex28W0/C1Y1Zy05VFM75nUwiAZVGT/v5sgdcA3UurOPUrxvXOFhJD7fOmdn4LeNc5NbpkfWimv5mWZ8KXFKdfXqInOYBnc6gsPEjZ8mKssbQOtvEkMczYl0oK8z3un4lgppbYkhZS3Fp7bnD0Jxeba+lODmTFviFcxq29NeRHDUEQ1DnnqtNSjohIo3Nutx+keNz9gmf9zfQkB0ChYMkK9q2KcaLwMJFQGFV9Y4w5YIwZzyBBI2lRLcD9PVXN/SdFqlokInUi0iEiE9P+UUTuqurmufl/AKTzsFGmvUNUAAAAAElFTkSuQmCC" alt="Google">
+                            Google
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://discord.com/channels/920485577911062528/1089376125844721735">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAyZJREFUOI1dk11olnUYxn/3/X+ePe9e9+VeP9aaM4PID1qOIIuoOWzSSQdRkRVY4ChHRCWi0UnhwdjE0UEnVsvEJm0HM/o4slGBRJToViYEmhNNoenWen03n3fP+//fHUwius6ugwt+B9dPAMAExAC2dd98WFR3gG0OtnA7gErVFZDvLISPhgerT/x3I9zKfY9fza9tWdFnwe8UcbH3KWbBAERUnMth5jNRd/C3P6bePPVl8zyAgOnWrX9WF9Y0fBbHSVc5LQZVgohoCAiAKmZmIQQ0ydVplpW/np6cfeL48ZU3FSQ0rq7ri6uSrnJaLJsJpRKuWDRJy0ZaNopFk1IJZwjltFiOq5KuxtV1fSBBnuneeECcP2HBgwXFgtx/r1IoKBNnKoIYG++JbXo68OOpCqqYqAvmqvCZPRKJ+p0qcRQkq8yVKvLaq0vZ8uAi+nbAAGWxf3MG9r+H5CMf8hYiNHs5AjrNFiyd87q2vYGOpgvMvPs5lUuXzWaui8RVmDizUJENaWrPTt7Br8s69ULLoxZr6NQQsmZ8mYVcjbSXvieMDhHfdbfVPf+cxOs38Pfhw8wOfiA3Dh0yS8u8cKBT3lrolae+2oZ30hwJhiei1oqsOfgK/sAblE+epFJfS+PevUgcc23PHlpPn5akrY0ApMs/ofPyEfvr53aLInFX5+Ilq9ZNfmEtU7/IlR0v4bNMHFh9T49Era2I98z09oKq3TY0hARv86K6ZXz/lFLx30pssnz2XFDAsgwHVhgYEK2upjQ8DEBxZITs4kUxVSF4CRYsKc/Uq0tvvO+9EBEQMOobaDp2jKW7dnFt927mRkfNOWeRc+aSxARMRDAgiEv0yKctP8x7Pl4orI8MsqYPBy3f0cGlTZtsemDAADEzMe/FvIdKBcxMwZzZtMI7Ohbx+u+6ckw2bk5qn35SLZcLhX37uHNigkJ/vxGCASZJAlEkls9nNaDOubF/ZWKZ1f607sX+todW9GS5Gnx1znCOdHyc0tGjAEStrdR3dyMjIzJ/9uy5LJd7TP6v83nYvgR65qAtQE5A9JZ1YfGV13Mw5uHtVXD+H7hBg7cexzCaAAAAAElFTkSuQmCC" alt="Discord">
+                            Discord
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://www.v2ny.net/#/stage/dashboard">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB6ElEQVQ4jU2SPWhUURCFz5l7X/afJaIQSLFVLAyCkYASiIWlnVUKK3srRdvYKLixSCcEEY3EUtPbmE5NZUqxCRLFZF2DxF2zb98ci/d2zXSXe+6dOWc+Ti06SUEEMSoJgPC/yNFlJCmJoEYKM5iBYH4mICnz0QNJOvFpCPrTwyAVWPQgQKJeIwkBERBhgENIIju/dPVSunSNAglBsICv3311PQKRUBz1ZAjqdH1xPn312JqNZGwH0NZ2+nANjZrcEYu5iX4fCxezjRVrNgLgY7+7e+ndNkOw3HskIQHEMNP9W37mVOwe4tnrwe8jxqi9H3j3Mex3Q7VEd5IyFdkoiby3woOfWQjZo6fhwVrp+Wa4fAHHAxmhInRaLndnuYSdz8nSbW5tO2EGVCb85nV72Uatkrk7KQCh3lrOwzPCgf6xej3NnbPZGS3MaX7WZlo22UzfvLVqxdwZCbhgpqMezp8dbrTVmg5A3jkA+naQvti0cplygDARue8kDp8sqzU9AYRxpp3D9MYdvP+UVMrmAqVIUVCWsVHnl13td4cSARBKh766rg87yelJpkOQFMCpK4I7CHf0/+aBgAQEl4KhWmHmZD6GWYQEEoBRjboVDOb4AoIyL1gVaUDM9ycJpHvOAnP1SbBZEKR/aiPx/BoILwcAAAAASUVORK5CYII=" alt="奈云">
+                            奈云
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://x.com/home">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABjElEQVQ4jYVSvaryQBCd3YhgyCoLKQxqIbHQMhY2FuklramELfUBxBcQwUIfwEJIIWJjZZpg42Lh+tOEPISFtaXkFvtxr+bL5Z5ihoGdOWfODsBfQAi9l4pMlFJVVSmlz+czjuP313EcE0IQQq/X62fAcrkMw3C9XnPOVVXFGAOAjM1mk3NuGMYHb7lcDoJA07T5fL5YLAAgk8kAQK1Wu16vlmWlqGSMeZ4HAEKITqcDAIVC4XA4uK77zfYDWa9Wq263W61Wb7dbpVLxfb/f7wOAoijpbui6fjqdDMNgjD0ej+FwmDI7QeI4zna7BYD9fp8u5h1yUd/3R6ORruthGBaLxcQ/JBls2+acR1FkmqbrupvNJp1Ejmk0GkII0zRbrdbxeJQ2DAaD9B5N087ns+M4shyPx9PpFGN8uVzq9frHjSCEcrlcEASMMWkixjibzQohbNtut9u73U5RlH8NMk0mk9ls9k0to2VZURR5nne/33u93ocwSun/hwkAhJBSqZTP5wkhv5qbcCKBL8tFe8plPSxnAAAAAElFTkSuQmCC" alt="X">
+                            X (Twitter)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>工具</h2>
+                <div class="links">
+                    <div class="link-item">
+                        <a href="https://obsidian.md/">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnElEQVQ4jXWSTWhUVxSF197n3Hvufa8vT/G/RejIQhHBWfzDUQQLQkQy6KC0tGCMNGCNZODoKk4Ef8B/nWoLNZRSOhEnTltacFQ6iFjqxIFVEqPv3XPOPXt3EJ8kEffoHNhrsfbiI6yYCsoVSK5N6Grb9r8KFEfOlbtX7g2Gln+VANLzR59v/qDV+XGone2YfxV+B/F39LI/O35r6L+VBnal+MaU/9QY+7Nl3hIiQEq3FWkandwB+GywN1DxkjB6/YSuB+SeZd6SUpP6PjxWyD9MtK8s3P6bU356Uay0zKCCLhql/q7Mus11rL1z1ijkLoCR0uWt2gcBcPLs18867yT4a9AF2dUuIzCIQhAlNX8TYSQ2qqLKILVrW63O0g4YAGZAaWxMTYzN/dd9/8DlLo9NFNWmBqEroiBAAXLeZZsAJX1zxtsOdn6ETuH4BxDO+xhm2y1nlHmVKF5Yy6SEushzS9ARgPRUtZiax6AGAEqqD67puj2q8pUkvdlyCIZQsNJdYxBz48rQJDGkk5cmF9ZVFQmgRABQVcob5vsPC+e2NklTk9LnCTJnATCoDUAEGM0y941hwPtwZ/yC+wJQsgDw4ctwMHP5Nh9jaBcu7/m0nQQbS1d8WcfAmTVPej4do9j82+na0z7qxgEPDABJpJtZAwIlQBWgLhHnzLBQTYD5uMz4J9X0x9wrfx9qTgGkFZRpAMX14/5q6dwEE9AL9UkVHW658kA/eAFUc+tsbMKj4N3eySt4OmCBFx+kExeKo3UI34cmAWr/ZLbDMQkACIGoSUkVWEe64N+DMkAL+eEmplHSZthlWdmkqEXuMmI2eWYJwG/fXh16/g5Igxm/Rb0jF90vPSkumz4+EaRDdajPiMhD0QQIzyxDH8D/go0+GY9MzzAAAAAASUVORK5CYII=" alt="Obsidian">
+                            Obsidian
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://www.chajianxw.com/product-tool/92246.html#google_vignette">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADF0lEQVQ4jXWSTWicVRiFn/feO18mM5OfCZ2EmKFUIkYxCGW6S0FEFxUpuKpdSDZSCBZXiQtBBEVwI8GAoi5cuNCFiS40FMFihTTRUtuIBY3RxJ9oYpNMZzJJZibzffe+LlLBCh44cDgcDmdxhH9BVUVENJ/Pd42Pjw9Za621VpMkSc3Ozv6ysLCwCQig/B8mJycH1tbWrlSr1f1qtVq7zd319fXvZ2Zm7vtv3pVKpVQURa5YLNrp6el4ZGTkKWPMiampqVNRFPlMJiObm5vx2NjYdKlUeg54ZmJiws3Pz4dCoeBlbm7u7cHBwceBgxAC2Ww2n8lkcpVKZUVE1BiD956urq5j3vukUqlsWWtFRFLLy8vfuEKh0N/f31+8Y1cI9PX13X+HpwoiZLPZzn+scrm84VS1paoB8KgajLFiDAGQOA4AmkqJERE9LPccSuO9bzkFIyJGQwhijPW1Ha19fkEOrl/VZGtT0IDrOUL6+AnNPXoKd6TXagheRIyIGCeqBFWCMe7g8pe6/eak+PU/wDkR6wBorf5M/evL7Mx8QP7p85p77LRFFURAe+8xIjQufOL/eu1lY6I0Nt+DikG9B8AaAyha32f71RfxO5WQPztqgiqmqz3HaqvC4ruTZKIMpNvQJMFXbtEW12kPDUK9SmjGQAqT66b8xhT+xyVsZyeuPQgv/PYZG8NpPrrSYs972nxM99kn+X3oIYKxDKW/wlY/JUkckrKEusf4D9FwBvft3p96vXqDGw8W9OJGRU8u3cSff5bX+0bli2uHpz0+WOKlk3dpd/ktQbKgHZD5CS2vqFnYWqZ6sKvWRrwynCUzdJRLR8/w8cWg6STR9pDopate31s8jbYd01BvqjatEu8rzR9wlVbNHKSCpONgrvVa8/7DdxMqaVIp4PYfchlYuWWRqIDIqmAiEMUk+8b1RvlW1ru4FSTOamTe6WnJ8z1bdLgsoooVMAoPHGly0Ngi9mkVNWpaKdfQjlhGz5279zt7s7DXrHsXnOzS4ImBYZZ+7WQ3AQckwCP31KCxSEwKiLEmLdv1gdrfPOuIfFB4OL0AAAAASUVORK5CYII=" alt="Easy Scraper">
+                            Easy Scraper
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://kj259khusm.feishu.cn/docx/Zce2dOt0joSZMHxETLkcOlr1nTh">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB0klEQVQ4jX2SPWtUURCGn5lz7t7NSmziRxtQEUSJP0HLVBaCnSBWgghW1gF/giBWIoKFhQr+AdOJWFgEVkTEj0YjZCPEhHV3z3kt7t29l11xYDjDzJl33vkwajl9XcvpEMZ/ZLLH6MsjG7Z9BnD+ti4E5ymJIMCsBaTZI4wBzovhkLv9+/YbIAKQOBVKjk0ymFW6IAKMldjljhIn2NAVNpDX4XHOZMREmcqaUxMikSb7JHcur+2wBqbYquAGGidsNPnnLNQpsMKROTI4A7yLAG6YOxyM4ewqXL0I0gKAPX6F+t9QrwQ3Os0MqBJigO8DePmmHu8UpLa3d7HomIRlVdEZgNUg3QJWjzcM1AyQz9uN3+tNxRZFsqAs4ejhpngMUITK7nWrP+0txTpRqj9vD+D565qVwc9f8GMXgsPyEnQi5DwH4IaZoVFC51bRjXUsJegUsLkFTzZhqYRJAmXwBQaQc6763/oKNx9QH2TVSgxVcp4mq2I9AxiJ9yFj9azU3sG0mCqvBJIxa8JB1r/H25x4VvSIFgjmmIdGbaqOY0R3HChqBiaAP2NdswM+GVySODIr3r5JIQPSmETg43wYgJO3VK5AubNwiI2EffThoe0B/AU8oMSk2dj9JwAAAABJRU5ErkJggg==" alt="飞书">
+                            提效降本的一百个工具分享
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://ywfmllgra2k.feishu.cn/wiki/SVfMwFcrNifNTHkWOXPcRUI0ngg">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB0klEQVQ4jX2SPWtUURCGn5lz7t7NSmziRxtQEUSJP0HLVBaCnSBWgghW1gF/giBWIoKFhQr+AdOJWFgEVkTEj0YjZCPEhHV3z3kt7t29l11xYDjDzJl33vkwajl9XcvpEMZ/ZLLH6MsjG7Z9BnD+ti4E5ymJIMCsBaTZI4wBzovhkLv9+/YbIAKQOBVKjk0ymFW6IAKMldjljhIn2NAVNpDX4XHOZMREmcqaUxMikSb7JHcur+2wBqbYquAGGidsNPnnLNQpsMKROTI4A7yLAG6YOxyM4ewqXL0I0gKAPX6F+t9QrwQ3Os0MqBJigO8DePmmHu8UpLa3d7HomIRlVdEZgNUg3QJWjzcM1AyQz9uN3+tNxRZFsqAs4ejhpngMUITK7nWrP+0txTpRqj9vD+D565qVwc9f8GMXgsPyEnQi5DwH4IaZoVFC51bRjXUsJegUsLkFTzZhqYRJAmXwBQaQc6763/oKNx9QH2TVSgxVcp4mq2I9AxiJ9yFj9azU3sG0mCqvBJIxa8JB1r/H25x4VvSIFgjmmIdGbaqOY0R3HChqBiaAP2NdswM+GVySODIr3r5JIQPSmETg43wYgJO3VK5AubNwiI2EffThoe0B/AU8oMSk2dj9JwAAAABJRU5ErkJggg==" alt="飞书">
+                            如何四小时吃透一个陌生行业
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://o1xdfcjcp5c.feishu.cn/wiki/Sfa2wwkYiiNNu8kF7EGcBdzEn1e">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB0klEQVQ4je2SPWsUQRCG3+rp6d6PgQyKuh8krKAeXBEEDXhV0IPXePdXiB79CyKKvyCIV88ejBcDXoQNSGDJiiZmI7g7O+Nuunu6PMzM6kG8eLUO3XRV9dsPbzXwP+j3AwOizPGjXk9tZ6diSYJb0s2e779fVDUC/B8FfsXt9tmW3cw9WwBeEEV7E3cPx292/0rw43J/ox7wuS3bvDQ0dOWOnr+QHv6VqW2clhjeqmXbmaFRNBhsLgUYIAKYL15Yh66/AzNgjwEVAkIWXd4BxgKhAoIAzs5vhh8+vuayQwDITaA7gfO8aDat63aFPBgTGQsQwIGC660imExdI0mV83q1AhCFd8A3u5InX4Gj/nX59/SZmOgOJVMlkqQmpjghRo+f0PjqjSA7BBIXu8p3+bL04aScsOqA9OAtx/e/oJENgRUunrEzbjx8ALX/GfW2J+2/c0Ug75YEEpLBjm2rzV5rSq+tw5ceCwBkDcyZNhqztLpcEFSTcMIHGkx5HAvb6ZIwBkyFgGcmVgrh+LCYnGCxJKg8YLjMU5DVR5+4djQG50xUCjAYJIhpvuAcCOEprQiW/4CBMO33z0cHI0Ja1VW5m2JVEczaGqKdnV2qkv8aPwFBCMkMBadkUgAAAABJRU5ErkJggg==" alt="飞书">
+                            各种工具-陈氏超人
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://q8smv4c9nu.feishu.cn/docx/RO9pdl9f5ojVO5xhBYOcDppqnrh">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB0klEQVQ4jX2SPWtUURCGn5lz7t7NSmziRxtQEUSJP0HLVBaCnSBWgghW1gF/giBWIoKFhQr+AdOJWFgEVkTEj0YjZCPEhHV3z3kt7t29l11xYDjDzJl33vkwajl9XcvpEMZ/ZLLH6MsjG7Z9BnD+ti4E5ymJIMCsBaTZI4wBzovhkLv9+/YbIAKQOBVKjk0ymFW6IAKMldjljhIn2NAVNpDX4XHOZMREmcqaUxMikSb7JHcur+2wBqbYquAGGidsNPnnLNQpsMKROTI4A7yLAG6YOxyM4ewqXL0I0gKAPX6F+t9QrwQ3Os0MqBJigO8DePmmHu8UpLa3d7HomIRlVdEZgNUg3QJWjzcM1AyQz9uN3+tNxRZFsqAs4ejhpngMUITK7nWrP+0txTpRqj9vD+D565qVwc9f8GMXgsPyEnQi5DwH4IaZoVFC51bRjXUsJegUsLkFTzZhqYRJAmXwBQaQc6763/oKNx9QH2TVSgxVcp4mq2I9AxiJ9yFj9azU3sG0mCqvBJIxa8JB1r/H25x4VvSIFgjmmIdGbaqOY0R3HChqBiaAP2NdswM+GVySODIr3r5JIQPSmETg43wYgJO3VK5AubNwiI2EffThoe0B/AU8oMSk2dj9JwAAAABJRU5ErkJggg==" alt="飞书">
+                            航海项目执行路径的100条提效指南
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://zh.z-lib.gs/">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+klEQVQ4jW2TwU8TURCGz5l7X/afJaIQSLFVLAyCkYASiIWlnVUKK3srRdvYKLixSCcEEY3EUtPbmE5NZUqxCRLFZF2DxF2zb98ci/d2zXSXe+6dOWc+Ti06SUEEMSoJgPC/yNFlJCmJoEYKM5iBYH4mICnz0QNJOvFpCPrTwyAVWPQgQKJeIwkBERBhgENIIju/dPVSunSNAglBsICv3311PQKRUBz1ZAjqdH1xPn312JqNZGwH0NZ2+nANjZrcEYu5iX4fCxezjRVrNgLgY7+7e+ndNkOw3HskIQHEMNP9W37mVOwe4tnrwe8jxqi9H3j3Mex3Q7VEd5IyFdkoiby3woOfWQjZo6fhwVrp+Wa4fAHHAxmhInRaLndnuYSdz8nSbW5tO2EGVCb85nV72Uatkrk7KQCh3lrOwzPCgf6xej3NnbPZGS3MaX7WZlo22UzfvLVqxdwZCbhgpqMezp8dbrTVmg5A3jkA+naQvti0cplygDARue8kDp8sqzU9AYRxpp3D9MYdvP+UVMrmAqVIUVCWsVHnl13td4cSARBKh776rg87yelJpkOQFMCpK4I7CHf0/+aBgAQEl4KhWmHmZD6GWYQEEoBRjboVDOb4AoIyL1gVaUDM9ycJpHvOAnP1SbBZEKR/aiPx/BoILwcAAAAASUVORK5CYII=" alt="Z-Library">
+                            Z-Library
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://app.anakin.ai/apps/158">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACuUlEQVQ4jY2TTWhcZRiFn/f77tw7d3InE5wqCqKYhIJVu6iLYCi6roVSKlN1oajQZcSFLQjB3u66LF0oRKIS3HQiaNFVFyJ1U1AURUdaf6h00yaZzN+dmczcud/rIhn7l4VneXg5vByeA7tLAG5dOzy9/vuLewFUt737ZXYzNUb0h2dz3rD8mece+Lx+ZW5SBP1fAVqtWIlx9e6Bc5FOPDdlis9MpU9+CFCpVu2ur45VrVbs8eOrWePrhbeikr/czdK0YMTanqRm7Z/H5PUv1lAVRPS+AI0xEuNaK+/O5aPgm1FOA9RQUCdua9S/5D/y9KGZdwz75W9Qge0QuSNIO+ffe9AEE1dykUwPjZfl+iP1S77H9V+Xc/Of1h4qs9A2zCWzsjYO8YBxO9JLyksF609329nIDv3xPGdpbfz58r7F1UcdF3IDSl6HjxPVI4AiYLRSsQI6OPnRoXBQOrrV9EayMWVYy6nr+HBLFi7b2YU9llJ4nWGkHJ75liOIKFW1htWnth9oB8ekV1Stl3R0I3D50ZSX3tz6QM6evvR4a3gwa+OKzhF1cFGHlwCooUaIHYC2/BmaIemNouZ7RS9ZT6+GfzVOKaJ+13yfH2Akcxq1kLDNEwDE4m5zkIQDbhZxjYJxSW6odXNCvop7AiptPRVsaEfa4vkJTLQY/geSsg2HbgY/62YoQb/o9essTF589TulaonVXH7b/8nf1PNh31o/QYpNfgGgotZATQFsM1rpNSXNklzmtwpfKrGBinIaRVWCZnbRb2iWX8cF66wAsLrTgaIS1A7+RscuRs
